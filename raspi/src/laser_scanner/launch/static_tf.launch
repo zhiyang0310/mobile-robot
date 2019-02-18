@@ -1,0 +1,5 @@
+<launch>
+    <node name="laser_scan"    pkg="laser_scanner"  type="laser_scan" output="screen">
+    <node pkg="tf" type="static_transform_publisher" name="laser" args="0 0 0.14 0 0 0 base_link laser 100">
+     </node>
+</launch>

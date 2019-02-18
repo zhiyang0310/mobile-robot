@@ -1,0 +1,6 @@
+<launch>
+  <node name="laser_scan"    pkg="laser_scanner"  type="laser_scan" output="screen">
+  <param name="serial_port"         type="string" value="/dev/ttyUSB0"/>
+  <param name="frame_id"            type="string" value="laser"/>
+  </node>
+</launch>
